@@ -7,7 +7,7 @@ const AdminPanel = () => {
   const [form, setForm] = useState({ name: '', image: '', description: '', price: '' });
 
   const fetchProducts = () => {
-    fetch('https://tab2buy.onrender.com/')
+    fetch('https://tab2buy.onrender.com/products')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error(err));
@@ -20,7 +20,7 @@ const AdminPanel = () => {
   const handleAddProduct = (e) => {
     e.preventDefault();
     const newProduct = { ...form, price: parseFloat(form.price), id: Date.now().toString()};
-    fetch('https://tab2buy.onrender.com', {
+    fetch('https://tab2buy.onrender.com/products', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newProduct)
