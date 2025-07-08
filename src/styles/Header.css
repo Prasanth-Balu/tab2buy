@@ -1,0 +1,87 @@
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #00bcd4, #00838f);
+  color: white;
+  padding: 16px 40px;
+  margin: 0;
+  box-sizing: border-box; 
+  border-radius:0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease-out;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #333;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 17px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #e0f7fa;
+}
+
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

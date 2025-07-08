@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Smart Watch",
+      "image": "/images/watch.jpg",
+      "description": "Noise Pulse 4 Max Smart Watch with AI Create (India's 1st Ever with Unlimited Watch Faces), AI Search, 1.96",
+      "price": 1299
+    },
+    {
+      "id": "2",
+      "name": "T-Shirt",
+      "image": "/images/tshirt.jpg",
+      "description": "Peter England Men's Snug Fit Solid Polo T-Shirt with Coloured Collar Tipping| Cotton Rich| Premium Pique Weave",
+      "price": 299
+    },
+    {
+      "id": "3",
+      "name": "realme Mobile",
+      "image": "/images/img2.jpg",
+      "description": "iQOO Z10 Lite 5G (Cyber Green, 4GB RAM, 128GB Storage) | 6000 mAh Battery | Dimensity 6300 5G Processor with 433K+* AnTuTu Score | IP64 Rated & Military Grade Shock-Resistance",
+      "price": 9999
+    },
+    {
+      "id": "4",
+      "name": "Bluetoot Speaker",
+      "image": "/images/speaker.jpg",
+      "description": "Zebronics ZEB-COUNTY 3W Wireless Bluetooth Portable Speaker With Supporting Carry Handle, USB, SD Card, AUX, FM & Call Function. (Black)",
+      "price": 500
+    },
+    {
+      "id": "5",
+      "name": "Bag",
+      "image": "/images/bag.jpg",
+      "description": "FUR JADEN Anti Theft Number Lock Backpack Bag with 15.6 Inch Laptop Compartment, USB Charging Port & Organizer Pocket for Men Women Boys Girls",
+      "price": 788
+    },
+    {
+      "id": "6",
+      "name": "Laptop",
+      "image": "/images/lap.jpg",
+      "description": "Lenovo IdeaPad Slim 3, Intel Core i5-12450H, 12th Gen, 16GB RAM, 512GB SSD, FHD, 14 /35.5cm, Windows 11, MS Office Home 2024, Grey, 1.37Kg, 83EQ0072IN, Alexa Built-in, 3 mon. Game Pass Laptop",
+      "price": 30000
+    },
+    {
+      "id": "7",
+      "name": "Web Cam",
+      "image": "/images/webcam.jpg",
+      "description": "OBSBOT Tiny 2 4K Webcam with 1/1.5 Sensor, PTZ AI Tracking Multi- Mode, Auto Focus, Gesture Control, 60 FPS, Voice Control, HDR Light Correction, Webcam for PC, Streaming, Meeting",
+      "price": 1200
+    }
+  ]
+}
