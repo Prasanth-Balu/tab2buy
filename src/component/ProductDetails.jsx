@@ -10,7 +10,7 @@ const ProductDetails = () => {
 
 
   useEffect(() => {
-  fetch('https://tab2buy.onrender.com')
+  fetch('https://tab2buy.onrender.com/')
     .then((res) => res.json())
     .then((data) => {
       const found = data.find(p => p.id.toString() === id.toString());
