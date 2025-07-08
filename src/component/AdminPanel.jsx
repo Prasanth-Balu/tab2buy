@@ -7,7 +7,7 @@ const AdminPanel = () => {
   const [form, setForm] = useState({ name: '', image: '', description: '', price: '' });
 
   const fetchProducts = () => {
-    fetch('https://tab2buy.onrender.com')
+    fetch('https://tab2buy.onrender.com/')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error(err));
