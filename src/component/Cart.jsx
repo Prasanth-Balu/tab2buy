@@ -10,7 +10,7 @@ const Cart = () => {
       try {
         setCart(JSON.parse(savedCart));
       } catch (err) {
-        console.error("❌ Failed to parse cart:", err);
+        console.error("Failed to parse cart:", err);
       }
     }
   }, []);
