@@ -8,26 +8,6 @@ const ProductDetails = () => {
   const navigate = useNavigate();
   const [product, setProduct] = useState(null);
 
-
-//   useEffect(() => {
-//   fetch('https://tab2buy.onrender.com/products')
-//     .then((res) => res.json())
-//     .then((data) => {
-//       const found = data.find(p => p.id.toString() === id.toString());
-//       if (found) {
-//         setProduct(found);
-//       } else {
-//         alert('❌ Product not found!');
-//         navigate('/');
-//       }
-//     })
-//     .catch((err) => {
-//       console.error('Error fetching product details:', err);
-//       alert('❌ Error loading product!');
-//       navigate('/');
-//     });
-// }, [id, navigate]);
-
   useEffect(() => {
   fetch(`https://tab2buy.onrender.com/products/${id}`)
     .then((res) => {
@@ -40,13 +20,13 @@ const ProductDetails = () => {
       if (data) {
         setProduct(data);
       } else {
-        alert('❌ Product not found!');
+        alert('Product not found!');
         navigate('/');
       }
     })
     .catch((err) => {
       console.error('Error fetching product details:', err);
-      alert('❌ Error loading product! Check console for details.');
+      alert('Error loading product! Check console for details.');
       navigate('/');
     });
 }, [id, navigate]);
@@ -67,7 +47,7 @@ const ProductDetails = () => {
     }
 
     localStorage.setItem('cart', JSON.stringify(updatedCart));
-    alert('🛒 Product added to cart!');
+    alert('Product added to cart!');
   };
 
   if (!product) return <p className="loading">Loading product details...</p>;
