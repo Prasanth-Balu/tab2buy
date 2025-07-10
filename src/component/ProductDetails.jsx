@@ -62,7 +62,7 @@ const ProductDetails = () => {
         <p className="description">{product.description}</p>
         <p className="price">₹{product.price}</p>
         <button onClick={handleAddToCart} className="add-btn">Add to Cart</button>
-        <button onClick={() => navigate(-1)} className="back-btn">← Back</button>
+        <button onClick={() => navigate(-1)} className="back-btn">Back</button>
       </div>
     </div>
   );
